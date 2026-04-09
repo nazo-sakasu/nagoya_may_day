@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<meta name="theme-color" content="#3a9650"/>
+<title>メーデーフェスティバル2026 ｜ イベント動画</title>
+<meta name="description" content="連合愛知 名古屋地域協議会メーデー「メーデーフェスティバル2026 in 東山動植物園」当日の動画をご覧いただけます。"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="メーデーフェスティバル2026 ｜ イベント動画"/>
+<meta property="og:description" content="メーデーフェスティバル2026 in 東山動植物園。イベントの様子をご覧いただけます。"/>
+<meta property="og:image" content="images/poster.jpg"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<!--
+  ════════════════════════════════════════
+  GA4 測定ID を設定してください
+  「G-XXXXXXXXXX」→ ご自分の測定IDに変更
+  未設定のままでもページは正常に動作します
+  ════════════════════════════════════════
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','G-XXXXXXXXXX'); /* ← ここも同じIDに */
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet"/>
+
+<style>
+/* ── リセット ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+  font-size:15px;line-height:1.8;
+  color:#1d3824;background:#f2f9f4;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,video{max-width:100%;display:block}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+:focus-visible{outline:3px solid #f5d433;outline-offset:3px;border-radius:6px}
+
+/* ────────────────────────────────────
+   HEADER
+──────────────────────────────────── */
+.hdr{
+  position:relative;overflow:hidden;
+  background:linear-gradient(155deg, #58bcd8 0%, #41aa68 45%, #2d8545 100%);
+  padding-bottom:52px;
+}
+
+/* 背景の装飾円 */
+.hdr::before{
+  content:'';position:absolute;
+  width:260px;height:260px;border-radius:50%;
+  background:#f5d433;opacity:.15;
+  top:-80px;right:-60px;
+}
+.hdr::after{
+  content:'';position:absolute;
+  bottom:-2px;left:0;right:0;height:52px;
+  background:#f2f9f4;
+  clip-path:ellipse(55% 100% at 50% 100%);
+}
+
+.hdr-inner{
+  position:relative;z-index:1;
+  max-width:520px;margin:0 auto;
+  padding:36px 22px 20px;text-align:center;
+}
+
+/* 主催ラベル */
+.hdr-label{
+  display:inline-block;
+  font-size:11px;font-weight:700;letter-spacing:.08em;
+  color:rgba(255,255,255,.9);
+  background:rgba(0,0,0,.2);
+  padding:4px 14px;border-radius:999px;margin-bottom:20px;
+  border:1px solid rgba(255,255,255,.3);
+}
+
+/* タイトル */
+.hdr-title-wrap{position:relative;display:inline-block;margin-bottom:16px}
+.hdr-title{
+  font-family:'Kiwi Maru',sans-serif;font-weight:700;
+  color:#fff;line-height:1.05;
+  text-shadow:0 2px 10px rgba(0,0,0,.25);
+  display:flex;flex-direction:column;align-items:center;
+}
+.hdr-title span{font-size:clamp(36px,11.5vw,54px);display:block}
+
+/* 2026バッジ */
+.hdr-year{
+  position:absolute;top:-10px;right:-16px;
+  background:#f5d433;color:#1d3824;
+  font-family:'Kiwi Maru',sans-serif;font-weight:700;font-size:14px;
+  padding:3px 12px;border-radius:999px;
+  box-shadow:0 3px 10px rgba(0,0,0,.2);
+  border:2px solid rgba(255,255,255,.55);
+}
+
+/* 場所 */
+.hdr-place{
+  font-size:clamp(14px,4.2vw,18px);font-weight:700;
+  color:rgba(255,255,255,.95);
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  margin-bottom:18px;
+  text-shadow:0 1px 4px rgba(0,0,0,.2);
+}
+
+/* 日付リボン */
+.hdr-date{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#f5d433;color:#1d3824;
+  font-size:clamp(13px,3.8vw,16px);font-weight:700;
+  padding:9px 20px;border-radius:999px;
+  box-shadow:0 4px 14px rgba(0,0,0,.18);
+  margin-bottom:18px;
+}
+.hdr-date-time{font-size:.84em;font-weight:500;opacity:.72}
+
+/* 動画ラベル */
+.hdr-video-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12.5px;font-weight:700;letter-spacing:.05em;
+  color:rgba(255,255,255,.88);
+}
+.live-dot{
+  width:9px;height:9px;border-radius:50%;
+  background:#80ffaa;flex-shrink:0;
+  box-shadow:0 0 0 3px rgba(128,255,170,.25);
+  animation:livepulse 2s ease-in-out infinite;
+}
+@keyframes livepulse{
+  0%,100%{box-shadow:0 0 0 3px rgba(128,255,170,.25)}
+  50%{box-shadow:0 0 0 7px rgba(128,255,170,.07)}
+}
+
+/* ────────────────────────────────────
+   MAIN
+──────────────────────────────────── */
+.main{
+  max-width:540px;margin:0 auto;
+  padding:16px 18px 60px;
+  display:flex;flex-direction:column;gap:22px;
+}
+
+/* ────────────────────────────────────
+   VIDEO CARD
+──────────────────────────────────── */
+.vcard{
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 4px 24px rgba(20,50,28,.10),0 1px 4px rgba(20,50,28,.06);
+  border:1px solid #dff0e4;
+  overflow:hidden;
+}
+
+/* カード上部 */
+.vcard-head{
+  padding:20px 22px 16px;
+  background:#fff;
+  border-bottom:1px solid #e0f0e4;
+  text-align:center;
+}
+.vcard-head-title{
+  font-family:'Kiwi Maru',sans-serif;
+  font-size:clamp(17px,5vw,21px);font-weight:700;
+  color:#1d3824;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin-bottom:6px;
+  letter-spacing:.02em;
+}
+.vcard-head-sub{font-size:13px;color:#7a9a7e;line-height:1.6}
+
+/* プレイヤー本体 */
+.vcard-player{
+  position:relative;background:#0f180f;
+  /* 縦動画：高さを基準にして幅は中央寄せ。右側に空白を出さない */
+  width:100%;
+  padding-top:177.78%; /* 9:16の縦比率 = 16/9*100 */
+  overflow:hidden;
+}
+/* max-heightで長くなりすぎないよう制御 */
+@media(max-height:900px){
+  .vcard-player{
+    padding-top:0;
+    height:68svh;
+  }
+}
+
+/* ローディング */
+.vcp-loading{
+  position:absolute;inset:0;z-index:2;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  background:#0f180f;color:rgba(255,255,255,.6);font-size:13.5px;
+  transition:opacity .3s;
+}
+.vcp-loading.hidden{opacity:0;pointer-events:none}
+.spinner{
+  width:40px;height:40px;border-radius:50%;
+  border:4px solid rgba(255,255,255,.1);
+  border-top-color:#b8e4c6;
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* 動画 */
+.vcp-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+
+/* 準備中表示 */
+.vcp-empty{
+  position:absolute;inset:0;z-index:3;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;padding:28px 22px;text-align:center;
+  background:linear-gradient(150deg,#0c1a0e 0%,#182d1a 100%);
+}
+.vcp-empty[hidden]{display:none}
+.vcp-empty-icon{font-size:52px;margin-bottom:2px}
+.vcp-empty-title{
+  font-family:'Kiwi Maru',sans-serif;
+  font-size:clamp(17px,5vw,21px);font-weight:700;color:#fff;line-height:1.4;
+}
+.vcp-empty-desc{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.7}
+.vcp-reload{
+  margin-top:6px;
+  display:inline-flex;align-items:center;gap:7px;
+  padding:12px 24px;
+  background:#3a9650;color:#fff;
+  font-size:13.5px;font-weight:700;
+  border-radius:999px;
+  box-shadow:0 4px 14px rgba(58,150,80,.4);
+  min-height:48px;
+  transition:background .15s,transform .12s;
+}
+.vcp-reload:hover{background:#2d7a40}
+.vcp-reload:active{transform:scale(.97)}
+
+/* カード下部 */
+.vcard-foot{
+  padding:12px 20px;
+  background:#fff;
+  border-top:1px solid #e0f0e4;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;flex-wrap:wrap;
+}
+.vcard-status{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 13px;border-radius:999px;
+  font-size:12px;font-weight:700;letter-spacing:.04em;
+  border:1px solid;
+  transition:background .3s,color .3s,border-color .3s;
+  background:#f0faf3;color:#3a9650;border-color:#c2e8cc;
+}
+.vcard-status.live{background:#f0faf3;color:#3a9650;border-color:#c2e8cc}
+.vcard-status.waiting{background:#f0f8ff;color:#2a7a9a;border-color:#b8dff0}
+.vcard-status.error{background:#fff4f0;color:#b84020;border-color:#f0c0a8}
+.status-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:currentColor;flex-shrink:0;
+}
+.vcard-status.live .status-dot{animation:sdot 1.8s ease-in-out infinite}
+@keyframes sdot{0%,100%{opacity:.9}50%{opacity:.2}}
+.vcard-foot-note{font-size:12px;color:#7a9a7e}
+
+/* ────────────────────────────────────
+   INFO SECTION
+──────────────────────────────────── */
+.info{
+  background:#fff;border-radius:16px;
+  padding:20px 20px 22px;
+  box-shadow:0 2px 10px rgba(20,50,28,.06);
+  border:1px solid #dff0e4;
+}
+.info-title{
+  font-family:'Kiwi Maru',sans-serif;
+  font-size:15px;font-weight:700;color:#3a9650;
+  display:flex;align-items:center;gap:7px;margin-bottom:14px;
+  letter-spacing:.03em;
+}
+.info-list{display:flex;flex-direction:column;gap:8px}
+.info-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:13.5px;color:#1d3824;line-height:1.65;
+  padding:10px 14px;background:#f5fbf7;border-radius:10px;
+  border:1px solid #e8f5eb;
+}
+.info-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+
+/* ────────────────────────────────────
+   FOOTER
+──────────────────────────────────── */
+.ftr{
+  background:#2c7a3f;padding:26px 20px;text-align:center;
+}
+.ftr-org{font-size:13px;font-weight:700;color:rgba(255,255,255,.92);margin-bottom:4px}
+.ftr-copy{font-size:11px;color:rgba(255,255,255,.45)}
+
+/* iPhoneセーフエリア */
+@supports(padding-bottom:env(safe-area-inset-bottom)){
+  .ftr{padding-bottom:calc(26px + env(safe-area-inset-bottom))}
+}
+
+/* PC対応 */
+@media(min-width:600px){
+  .main{padding:20px 28px 72px}
+  .vcard-player{max-height:76svh}
+}
+
+/* アニメーション軽減 */
+@media(prefers-reduced-motion:reduce){
+  .live-dot,.status-dot,.spinner{animation:none!important}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="hdr">
+  <div class="hdr-inner">
+    <p class="hdr-label">連合愛知 名古屋地域協議会メーデー</p>
+
+    <div class="hdr-title-wrap">
+      <h1 class="hdr-title">
+        <span>メーデー</span>
+        <span>フェスティバル</span>
+      </h1>
+      <div class="hdr-year">2026</div>
+    </div>
+
+    <p class="hdr-place">
+      <span aria-hidden="true">🦁</span>
+      in 東山動植物園
+      <span aria-hidden="true">🐘</span>
+    </p>
+
+    <div class="hdr-date">
+      <span aria-hidden="true">📅</span>
+      <strong>5月16日（土）</strong>
+      <span class="hdr-date-time">9:00〜15:00</span>
+    </div>
+
+    <p class="hdr-video-tag">
+      <span class="live-dot" aria-hidden="true"></span>
+      イベント動画 公開中
+    </p>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="main">
+
+  <!-- 動画カード -->
+  <section aria-labelledby="video-heading">
+    <div class="vcard">
+
+      <div class="vcard-head">
+        <h2 class="vcard-head-title" id="video-heading">
+          動画をご覧ください
+        </h2>
+        <p class="vcard-head-sub">動画は必ず最後までみてね！<br>この後も東山動植物園でお楽しみください！</p>
+      </div>
+
+      <div class="vcard-player" id="playerWrap">
+        <!-- ローディング -->
+        <div class="vcp-loading" id="loadingEl" aria-hidden="true">
+          <div class="spinner"></div>
+          <p>動画を読み込んでいます…</p>
+        </div>
+
+        <!-- 動画本体 -->
+        <video
+          id="mainVideo"
+          class="vcp-video"
+          controls preload="metadata"
+          playsinline webkit-playsinline
+          poster="images/poster.jpg"
+          aria-label="メーデーフェスティバル2026 イベント動画"
+        >
+          <source src="videos/current.mp4" type="video/mp4"/>
+        </video>
+
+        <!-- 準備中 / エラー -->
+        <div class="vcp-empty" id="emptyEl" hidden>
+          <div class="vcp-empty-icon" aria-hidden="true">🎥</div>
+          <p class="vcp-empty-title" id="emptyTitle">ただいま動画を準備中です</p>
+          <p class="vcp-empty-desc" id="emptyDesc">もうすぐ公開予定です。<br>しばらくしてからもう一度ご確認ください。</p>
+          <button class="vcp-reload" type="button" onclick="location.reload()">
+            <span aria-hidden="true">🔄</span>ページを再読み込みする
+          </button>
+        </div>
+      </div>
+
+      <div class="vcard-foot">
+        <div class="vcard-status" id="statusEl" role="status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="statusText">読み込み中…</span>
+        </div>
+        <p class="vcard-foot-note"><span aria-hidden="true">🔊</span>&nbsp;音声が流れます</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ご案内 -->
+  <section aria-labelledby="info-heading">
+    <div class="info">
+      <h2 class="info-title" id="info-heading">
+        <span aria-hidden="true">📋</span>ご視聴の前に
+      </h2>
+      <ul class="info-list">
+        <li><span class="info-icon" aria-hidden="true">📶</span>通信環境のよい場所でご覧ください。</li>
+        <li><span class="info-icon" aria-hidden="true">🔄</span>再生できない場合は、ページを再読み込みしてください。</li>
+        <li><span class="info-icon" aria-hidden="true">🔊</span>音声が流れますので、周囲に合わせてご調整ください。</li>
+        <li><span class="info-icon" aria-hidden="true">📱</span>iPhoneは横向きにするとより大きくご覧いただけます。</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="ftr">
+  <p class="ftr-org">主催：連合愛知 名古屋地域協議会</p>
+  <p class="ftr-copy">&copy; <span id="footerYear"></span> 連合愛知 名古屋地域協議会</p>
+</footer>
+
+<script>
+'use strict';
+
+/* ── 定数 ── */
+const GA4_ID       = 'G-XXXXXXXXXX'; // 測定IDと同じ値
+const VIDEO_NAME   = 'メーデーフェスティバル2026';
+const VIDEO_META   = { video_name: VIDEO_NAME, page_type: 'event_video', is_main_video: true };
+const LOAD_TIMEOUT = 10000;
+
+/* ── DOM ── */
+const video    = document.getElementById('mainVideo');
+const loadEl   = document.getElementById('loadingEl');
+const emptyEl  = document.getElementById('emptyEl');
+const statusEl = document.getElementById('statusEl');
+const statusTx = document.getElementById('statusText');
+
+/* ── フッター年号 ── */
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+/* ── GA4イベント送信 ── */
+function ga4(name, extra){
+  if(typeof gtag !== 'function') return;
+  gtag('event', name, Object.assign({}, VIDEO_META, extra || {}));
+}
+
+/* ── ステータス更新 ── */
+function setStatus(state, text){
+  statusEl.className = 'vcard-status ' + (state || '');
+  statusTx.textContent = text;
+}
+
+/* ── ローディング非表示 ── */
+function hideLoading(){
+  loadEl.classList.add('hidden');
+  setTimeout(() => { loadEl.style.display = 'none'; }, 320);
+}
+
+/* ── 準備中表示 ── */
+function showEmpty(isError){
+  video.style.display = 'none';
+  emptyEl.removeAttribute('hidden');
+  if(isError){
+    document.getElementById('emptyTitle').textContent = '動画の読み込みができませんでした';
+    document.getElementById('emptyDesc').innerHTML   = '通信状態をご確認のうえ、<br>ページを再読み込みしてみてください。';
+  }
+}
+
+/* ── 進捗フラグ ── */
+const sent = { 25:false, 50:false, 75:false, 100:false };
+let lastTime = 0;
+
+/* ── イベント設定 ── */
+video.addEventListener('loadedmetadata', () => {
+  setStatus('live', '公開中');
+  hideLoading();
+});
+
+video.addEventListener('canplay', () => {
+  if(statusTx.textContent === '読み込み中…'){ setStatus('live','公開中'); hideLoading(); }
+});
+
+video.addEventListener('error', () => {
+  const code = video.error && video.error.code;
+  const isNotFound = (code === 3 || code === 4);
+  setStatus(isNotFound ? 'waiting' : 'error', isNotFound ? 'ただいま公開準備中' : '読み込みエラー');
+  showEmpty(!isNotFound);
+  hideLoading();
+});
+
+video.querySelector('source').addEventListener('error', () => {
+  setStatus('waiting','ただいま公開準備中');
+  showEmpty(false);
+  hideLoading();
+});
+
+video.addEventListener('play', () => ga4('video_play_start'));
+
+video.addEventListener('timeupdate', () => {
+  const { currentTime, duration } = video;
+  if(!duration) return;
+  // 巻き戻し検出
+  if(currentTime < lastTime - 2){ sent[25]=sent[50]=sent[75]=sent[100]=false; }
+  lastTime = currentTime;
+  const pct = currentTime / duration * 100;
+  if(!sent[25]  && pct>=25)  { sent[25]=true;  ga4('video_progress_25',{video_percent:25}); }
+  if(!sent[50]  && pct>=50)  { sent[50]=true;  ga4('video_progress_50',{video_percent:50}); }
+  if(!sent[75]  && pct>=75)  { sent[75]=true;  ga4('video_progress_75',{video_percent:75}); }
+});
+
+video.addEventListener('ended', () => {
+  if(!sent[100]){ sent[100]=true; ga4('video_complete',{video_percent:100}); }
+});
+
+/* タイムアウト保険 */
+const timer = setTimeout(() => {
+  if(statusTx.textContent === '読み込み中…'){
+    setStatus('waiting','ただいま公開準備中');
+    showEmpty(false);
+    hideLoading();
+  }
+}, LOAD_TIMEOUT);
+video.addEventListener('loadedmetadata', () => clearTimeout(timer), {once:true});
+video.addEventListener('canplay',        () => clearTimeout(timer), {once:true});
+</script>
+</body>
+</html>
