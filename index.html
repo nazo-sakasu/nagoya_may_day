@@ -179,6 +179,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   letter-spacing:.02em;
 }
 .vcard-head-sub{font-size:13px;color:#7a9a7e;line-height:1.6}
+.vcard-publish-notice{
+  display:inline-block;
+  margin-top:10px;
+  font-size:12.5px;font-weight:700;
+  color:#2d7a42;
+  background:#eaf7ee;
+  padding:5px 14px;border-radius:999px;
+  border:1px solid #b5e2c0;
+  letter-spacing:.03em;
+}
 
 /* プレイヤー本体 */
 .vcard-player{
@@ -348,7 +358,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       <span class="hdr-date-time">9:00〜15:00</span>
     </div>
 
-    <p class="hdr-video-tag">
+    <p class="hdr-video-tag" id="liveTag" style="display:none">
       <span class="live-dot" aria-hidden="true"></span>
       イベント動画 公開中
     </p>
@@ -367,6 +377,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
           動画をご覧ください
         </h2>
         <p class="vcard-head-sub">動画は必ず最後までみてね！<br>この後も東山動植物園でお楽しみください！</p>
+        <p class="vcard-publish-notice" id="publishNotice">🕙 10:30頃 公開予定</p>
       </div>
 
       <div class="vcard-player" id="playerWrap">
@@ -452,6 +463,15 @@ const statusTx = document.getElementById('statusText');
 /* ── フッター年号 ── */
 document.getElementById('footerYear').textContent = new Date().getFullYear();
 
+// 公開予定テロップ：2026/5/16 10:30以降 または 動画公開後は自動で非表示
+(function(){
+  var notice = document.getElementById('publishNotice');
+  if(!notice) return;
+  if(new Date() >= new Date('2026-05-16T10:30:00+09:00')){
+    notice.style.display = 'none';
+  }
+})();
+
 /* ── GA4イベント送信 ── */
 function ga4(name, extra){
   if(typeof gtag !== 'function') return;
@@ -488,6 +508,10 @@ let lastTime = 0;
 video.addEventListener('loadedmetadata', () => {
   setStatus('live', '公開中');
   hideLoading();
+  var notice=document.getElementById('publishNotice');
+  if(notice) notice.style.display='none';
+  var liveTag=document.getElementById('liveTag');
+  if(liveTag) liveTag.style.display='inline-flex';
 });
 
 video.addEventListener('canplay', () => {
