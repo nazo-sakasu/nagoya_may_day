@@ -305,6 +305,35 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .info-icon{font-size:18px;flex-shrink:0;margin-top:1px}
 
 /* ────────────────────────────────────
+   KEYWORD BAR
+──────────────────────────────────── */
+.keyword-bar{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  background:linear-gradient(135deg,#ffe234 0%,#ffc107 100%);
+  color:#1d3824;
+  padding:18px 20px;
+  border-radius:18px;
+  text-decoration:none;
+  font-weight:900;
+  box-shadow:0 6px 20px rgba(255,193,7,.45);
+  transition:transform .15s,box-shadow .15s;
+  -webkit-tap-highlight-color:transparent;
+  border:3px solid rgba(255,255,255,.5);
+}
+.keyword-bar:active{transform:scale(.97);box-shadow:0 3px 10px rgba(255,193,7,.3)}
+.keyword-bar__text{
+  text-align:center;
+  font-size:clamp(15px,4.5vw,18px);
+  line-height:1.45;
+  letter-spacing:.02em;
+}
+.keyword-bar__animal{
+  font-size:clamp(28px,8vw,36px);
+  flex-shrink:0;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.15));
+}
+
+/* ────────────────────────────────────
    FOOTER
 ──────────────────────────────────── */
 .ftr{
@@ -419,6 +448,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
       </div>
 
     </div>
+  </section>
+
+  <!-- キーワードバー -->
+  <section>
+    <a class="keyword-bar" href="https://www.stamprally.net/vqvqlquvnxvwbtnt/spots/326472" target="_blank" rel="noopener">
+      <span class="keyword-bar__animal">🦁</span>
+      <span class="keyword-bar__text">キーワードが分かったから<br>ここをタップ！</span>
+      <span class="keyword-bar__animal">🐘</span>
+    </a>
   </section>
 
   <!-- ご案内 -->
